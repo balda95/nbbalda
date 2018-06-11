@@ -5,7 +5,7 @@
 		$phone=$_POST['phone'];
 		$msg=$_POST['msg'];
 
-		$to='bjbaldaa@mail.com'; // Receiver Email ID, Replace with your email ID
+		$to='bjbaldaa@gmail.com'; // Receiver Email ID, Replace with your email ID
 		$subject='Form Submission';
 		$message="Name :".$name."\n"."Phone :".$phone."\n"."Wrote the following :"."\n\n".$msg;
 		$headers="From: ".$email;
