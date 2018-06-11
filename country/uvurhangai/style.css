@@ -1,0 +1,476 @@
+
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+
+body,h1, h3, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr{
+    margin: 30px 0;
+}
+
+body{
+    background-size: contain; 
+    background-repeat: no-repeat;
+    font-family: 'Alegreya', serif;
+}
+
+.wrapper{
+    overflow: hidden;
+    margin: 30px;
+}
+/* header */
+
+.header {
+    width: 100%;
+    background-color: black; 
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+
+/* Sticky */
+
+.fixed {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.nav-placeholder {
+    margin: 0 0 0 0;
+    background-color: black;
+}
+
+.top_wrapp {
+    margin: 0 30px;
+}
+
+.header .top_logo .logo_img{
+    float: left;
+}
+
+.header .top_logo img{
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.header .top_menu{
+    float: right;
+}
+
+.header .top_menu .top_menu_list a{
+    display: block;
+    padding: 0 15px; 
+    color: #ffffff8a;
+}
+
+.header .top_menu .top_menu_list a:hover{
+    color: white;
+}
+
+.top_menu_list .menu_toggle {
+    position: relative;
+}
+
+.top_menu_list .menu{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.top_menu_list{
+    font-family: 'Philosopher', sans-serif;
+}
+
+@media (min-width: 600px){
+    .top_menu_list .menu_toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .top_menu_list .menu {
+        display: none;
+    }
+}
+
+/* Banner */
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .banner_bg {
+    background-image: url(../../image/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+
+.banner .banner_text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 120px;
+    font-family: 'Alegreya', serif;
+    font-size: 80px;
+}
+
+.banner .banner_text h1{
+    font-size: 40px;
+}
+
+.banner .banner_into {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+.banner .banner_into h1{
+    font-size: 20px;
+    color: white;
+}
+
+.banner .banner_list{
+    display: inline-block;
+}
+
+.banner .banner_list li{
+    float: left;
+    height: 80px;
+    line-height: 80px;
+}
+
+.banner .banner_list li > a{
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.banner .banner_list li > a:hover{
+    padding: 20px;
+    color: white;
+    opacity: 0.5    ;
+    font-size: 20px;
+}
+
+
+/* Content */
+.content {
+    text-align: justify;
+    position: relative;
+}
+
+.content .content_left{
+    float: left;
+    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content h1{
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f0e9dc;
+    font-size: 20px;
+    margin: 0px;
+}
+
+/* Content Info */
+
+.content_info{
+    overflow: hidden;
+    widows: 100%;
+}
+
+.content .info_text img{
+    width: 30%;
+    float: left;
+    margin: 0 30px 15px 0;
+}
+
+/* Show More and Less Button */
+.content .showBtn, .content .lessBtn{
+    display: block;
+    margin: 0 auto;
+    background-color: #19cbf5;
+    width: 100px;
+    height: 38px;
+    border-radius: 5%;
+    border: none;
+    color: white;
+}
+
+.content .showBtn:hover, .content .lessBtn:hover{
+    background-color: #076d86;
+}
+
+
+/* Travel */ 
+
+
+.content .content_travel{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.content_travel .content_section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content_travel .link_block img{
+    float: left;
+    width: 30%;
+    margin: 0 30px 15px 0;
+}
+
+/* .content_travel .text_block{
+    float: left;
+    padding-left: 15px;
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+} */
+
+.content .content_travel .content_section .col {
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.content .content_travel .content_section .col-md {
+    margin-bottom: 0; 
+}
+
+
+/* Content Image */
+
+.content_image img{
+    vertical-align: middle;
+    height: 450px;
+}
+
+.content_image .img_slide{
+    display: none;
+}
+
+.content_image {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    margin: 30px 0;
+}
+
+.content_image .prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.content_image .next {
+    right: 30px;
+    border-radius: 3px 0 0 3px;
+}
+
+.content_image .prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.content_image .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.content_image .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.content_image .active .dot:hover{
+    background-color: #717171;
+}
+
+.content_image .fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next, .text {font-size: 11px}
+  }
+
+/* Content Right */
+
+.content .content_right{
+    float: left;
+    width: 25%;
+}
+
+.content_right .client_think {
+    height: 200px;
+    margin: 0 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content_right .text {
+    padding-top: 15px;
+}
+
+.content_right textarea{
+    width: 100%; 
+    margin-top: 15px;
+}
+/* Content Screen */
+
+@media (max-width: 660px){
+    .content_image img{
+        height: 350px;
+    }
+}
+
+@media (max-width: 440px){
+    .content_image img{
+        height: 200px;
+    }
+}
+
+@media (max-width: 800px){
+    .content .content_left{
+        width: 100%;
+        float: none;
+    }
+
+    .content .content_right{
+        float: none;
+        padding: 0;
+        padding-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px){
+    .content .content_travel .link_block img{
+        float: none;
+        width: 100%;
+    }
+    
+    .content_travel .text_block{
+        margin-top: 15px;
+        padding-left: 0;
+        float: none;
+        width: 100%;
+    }
+}
+
+/* @media (min-width: 1470px){
+    .content .content_travel .link_block img{
+        float: left;
+        width: 40%;
+    }
+    
+    .content .content_travel .text_block{
+        margin-top: 15px;
+        float: left;
+        width: 56%;
+    }
+} */
+
+
+
+/*  Footer */
+
+.footer{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(0,0,0);       
+    overflow: hidden;
+}
+
+.footer .copy {
+    float: right;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 15px;
+    display: block;
+    margin-top: 20px;
+}
+
+.footer .social_icon{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer .social_icon li{
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul.social_icon li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer ul.social_icon li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
